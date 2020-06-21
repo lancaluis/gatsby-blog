@@ -1,0 +1,18 @@
+{
+  "banner": {
+    "phrase": "Bem vindo ao meu portfólio!"
+  },
+  "notFound": {
+    "message": ""
+  },
+  "home": {
+    "title": "",
+    "text": "",
+    "followMe": ""
+  },
+  "navbar": {
+    "home": "início",
+    "aboutMe": "sobre mim",
+    "blog": "blog"
+  }
+}

@@ -1,14 +1,18 @@
 import React from "react"
+import PropTypes from "prop-types"
 
-import Layout from "../components/layout"
+import { translate } from "../i18n/translate"
 import SEO from "../components/seo"
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+const NotFoundPage = ({ t }) => (
+  <>
+    <SEO title={t("notFound.message")} />
+    <p>oi</p>
+  </>
 )
 
-export default NotFoundPage
+NotFoundPage.propTypes = {
+  t: PropTypes.func.isRequired,
+}
+
+export default translate(NotFoundPage)

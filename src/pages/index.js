@@ -1,22 +1,43 @@
 import React from "react"
-import { Link } from "gatsby"
+import PropTypes from "prop-types"
+import { graphql, useStaticQuery } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import SocialLinks from "../components/SocialLinks"
+import { translate } from "../i18n/translate"
 
-const IndexPage = () => (
-  <Layout>
+import { Wrapper, Description, Title, Text, TextBold, Image } from "../styles/home"
+
+const ProfileImage = () => {
+  const { profileImage } = useStaticQuery(graphql`
+    query {
+      profileImage: file(relativePath: { eq: "luislanca.jpg" }) {
+        childImageSharp {
+          fixed(width: 200, height: 200) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
+  return <Image fixed={profileImage.childImageSharp.fixed} />
+}
+
+const IndexPage = ({ t }) => (
+  <Wrapper>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+    <ProfileImage />
+    <Description>
+      <Title>{t("home.title")}</Title>
+      <Text>{t("home.text")}</Text>
+      <TextBold>{t("home.followMe")}</TextBold>
+      <SocialLinks />
+    </Description>
+  </Wrapper>
 )
 
-export default IndexPage
+IndexPage.propTypes = {
+  t: PropTypes.func.isRequired,
+}
+
+export default translate(IndexPage)

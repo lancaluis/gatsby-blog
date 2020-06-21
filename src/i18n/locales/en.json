@@ -1,0 +1,18 @@
+{
+  "banner": {
+    "phrase": "Welcome to my portfolio!"
+  },
+  "notFound": {
+    "message": ""
+  },
+  "home": {
+    "title": "Hi, I'm Luís",
+    "text": "Nice to meet you. I'm a Software Developer who works from anywhere and loves hamburger.  You will find here my tech skills, some posts about programming and a litte bit about my journey around the Earth.",
+    "followMe": "Follow me"
+  },
+  "navbar": {
+    "home": "home",
+    "aboutMe": "about me",
+    "blog": "blog"
+  }
+}
