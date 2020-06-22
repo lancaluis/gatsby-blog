@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Gatsby, Reactjs } from "@styled-icons/remix-line"
 
 import { translate } from "../../i18n/translate"
 
