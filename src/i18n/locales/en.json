@@ -3,16 +3,19 @@
     "phrase": "Welcome to my portfolio!"
   },
   "notFound": {
-    "message": ""
+    "message": "Not found!"
   },
   "home": {
-    "title": "Hi, I'm Luís",
-    "text": "Nice to meet you. I'm a Software Developer who works from anywhere and loves hamburger.  You will find here my tech skills, some posts about programming and a litte bit about my journey around the Earth.",
+    "title": "Title",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum, tellus nec venenatis porta, lorem erat sollicitudin neque, at congue nibh mauris a turpis. Nullam lorem massa, facilisis id luctus eu, commodo non lectus. Vestibulum ac euismod lectus, a consectetur lacus.",
     "followMe": "Follow me"
   },
   "navbar": {
     "home": "home",
     "aboutMe": "about me",
     "blog": "blog"
+  },
+  "blog": {
+    "timeToRead": "min read"
   }
 }

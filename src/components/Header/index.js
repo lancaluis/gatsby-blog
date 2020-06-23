@@ -15,9 +15,9 @@ const Header = ({ t }) => (
       <MenuLink to="/about" activeClassName="active">
         {t("navbar.aboutMe")}
       </MenuLink>
-      {/* <MenuLink to="/blog" activeClassName="active">
+      <MenuLink to="/blog" activeClassName="active">
         {t("navbar.blog")}
-      </MenuLink> */}
+      </MenuLink>
     </NavBar>
   </Wrapper>
 )

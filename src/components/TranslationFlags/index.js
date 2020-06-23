@@ -1,15 +1,12 @@
 import React from "react"
 import { useTranslation } from "react-i18next"
 
-import { Wrapper, Flags } from "./styled"
-
 import en from "../../images/en.svg"
-import es from "../../images/es.svg"
 import pt from "../../images/pt.svg"
+import { Wrapper, Flags } from "./styled"
 
 const flags = [
   { path: pt, name: "pt" },
-  { path: es, name: "es" },
   { path: en, name: "en" },
 ]
 

@@ -7,7 +7,6 @@ import { translate } from "../i18n/translate"
 const AboutPage = ({ t }) => (
   <>
     <SEO title="About me" />
-    <p>About page</p>
   </>
 )
 
