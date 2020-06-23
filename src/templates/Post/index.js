@@ -29,12 +29,16 @@ const BlogPost = ({ t, data, pageContext }) => {
 
   return (
     <Wrapper>
-      <SEO title={post.frontmatter.title} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        thumbnail={post.frontmatter.thumbnail}
+      />
       <BackToBlog>
         <Icon>
           <ArrowLeft />
         </Icon>
-        <BackToBlogLink to="/blog">Voltar aos posts</BackToBlogLink>
+        <BackToBlogLink to="/blog">{t("post.backToBlog")}</BackToBlogLink>
       </BackToBlog>
       <Header>
         <Date>
@@ -67,6 +71,7 @@ export const query = graphql`
       frontmatter {
         date(locale: "pt-br", formatString: "DD [/] MM [/] YYYY")
         title
+        thumbnail
       }
       html
       timeToRead

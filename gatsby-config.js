@@ -11,7 +11,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `uploads`,
-        path: `${__dirname}/src/static/assets/img/posts`,
+        path: `${__dirname}/src/static/assets/img`,
       },
     },
     {
@@ -47,6 +47,7 @@ module.exports = {
           },
           `gatsby-remark-lazy-load`,
           `gatsby-remark-prismjs`,
+          `gatsby-plugin-sitemap`,
         ],
       },
     },
@@ -82,5 +83,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify-cms`,
   ],
 }
