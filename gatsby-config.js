@@ -3,10 +3,17 @@ module.exports = {
     title: `Luís Lança`,
     description: `Desenvolvedor Front-end`,
     author: `@luisslanca`,
-    siteUrl: 'https://luislanca.dev'
+    siteUrl: "https://luislanca.dev",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `uploads`,
+        path: `${__dirname}/src/static/assets/img/posts`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,7 +31,23 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [],
+        plugins: [
+          {
+            resolve: "gatsby-remark-relative-images",
+            options: {
+              name: "uploads",
+            },
+          },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 700,
+              linkImagesToOriginal: false,
+            },
+          },
+          `gatsby-remark-lazy-load`,
+          `gatsby-remark-prismjs`,
+        ],
       },
     },
     `gatsby-transformer-sharp`,
@@ -43,8 +66,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-layout`,
       options: {
-        component: `${__dirname}/src/components/Layout/index.js`
-      }
+        component: `${__dirname}/src/components/Layout/index.js`,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
