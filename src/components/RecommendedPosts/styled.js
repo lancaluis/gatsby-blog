@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 export const Wrapper = styled.section`
   display: flex;
 `
-
 export const RecommendedLink = styled(Link)`
   align-items: center;
   color: #ffd250;

@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 import { Calendar } from "@styled-icons/boxicons-solid/Calendar"
 import { TimeFive } from "@styled-icons/boxicons-solid/TimeFive"
-import { ArrowLeft } from "@styled-icons/feather/ArrowLeft"
 
 import SEO from "../../components/seo"
 import RecommendedPosts from "../../components/RecommendedPosts"
@@ -35,10 +34,7 @@ const BlogPost = ({ t, data, pageContext }) => {
         thumbnail={post.frontmatter.thumbnail}
       />
       <BackToBlog>
-        <Icon>
-          <ArrowLeft />
-        </Icon>
-        <BackToBlogLink to="/blog">{t("post.backToBlog")}</BackToBlogLink>
+        <BackToBlogLink to="/blog">← {t("post.backToBlog")}</BackToBlogLink>
       </BackToBlog>
       <Header>
         <Date>

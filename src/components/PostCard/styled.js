@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
+import media from "styled-media-query"
 
 export const Container = styled.div`
   flex-direction: column;
@@ -11,6 +12,9 @@ export const LinkWrapper = styled(Link)`
   &:hover {
     color: #dadada;
   }
+  ${media.lessThan("medium")`
+    margin: 2rem 0 3rem 0;
+  `}
 `
 export const Wrapper = styled.section`
   display: flex;

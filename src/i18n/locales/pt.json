@@ -6,9 +6,10 @@
     "message": "Ops, página não encontrada"
   },
   "home": {
-    "title": "Título",
+    "titlePage": "Início",
+    "title": "Opa!",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum, tellus nec venenatis porta, lorem erat sollicitudin neque, at congue nibh mauris a turpis. Nullam lorem massa, facilisis id luctus eu, commodo non lectus. Vestibulum ac euismod lectus, a consectetur lacus.",
-    "followMe": "Segue noix"
+    "followMe": "Segue lá"
   },
   "navbar": {
     "home": "início",
@@ -21,5 +22,12 @@
   "post": {
     "backToBlog": "Voltar aos posts",
     "comments": "Comentários"
-  } 
+  },
+  "pagination": {
+    "previous": "Página anterior",
+    "next": "Próxima página"
+  },
+  "about": {
+    "titlePage": "Sobre mim"
+  }
 }

@@ -1,6 +1,8 @@
 import React from "react"
-import propTypes from "prop-types"
+import PropTypes from "prop-types"
 import { Link } from "gatsby"
+
+import { translate } from "../../i18n/translate"
 
 import { Wrapper } from "./styled"
 
@@ -11,23 +13,25 @@ const Pagination = ({
   numPages,
   prevPage,
   nextPage,
+  t,
 }) => (
   <Wrapper>
-    {!isFirst && <Link to={prevPage}>← página anterior</Link>}
+    {!isFirst && <Link to={prevPage}>← {t("pagination.previous")}</Link>}
     <p>
       {currentPage} de {numPages}
     </p>
-    {!isLast && <Link to={nextPage}>proxima página →</Link>}
+    {!isLast && <Link to={nextPage}>{t("pagination.next")} →</Link>}
   </Wrapper>
 )
 
 Pagination.propTypes = {
-  isFirst: propTypes.bool.isRequired,
-  isLast: propTypes.bool.isRequired,
-  currentPage: propTypes.number.isRequired,
-  numPages: propTypes.number.isRequired,
-  prevPage: propTypes.string,
-  nextPage: propTypes.string,
+  t: PropTypes.object.isRequired,
+  isFirst: PropTypes.bool.isRequired,
+  isLast: PropTypes.bool.isRequired,
+  currentPage: PropTypes.number.isRequired,
+  numPages: PropTypes.number.isRequired,
+  prevPage: PropTypes.string,
+  nextPage: PropTypes.string,
 }
 
-export default Pagination
+export default translate(Pagination)

@@ -1,10 +1,11 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const Wrapper = styled.section`
   align-items: center;
   color: #ffd250;
   display: flex;
-  padding: 5rem 3rem 0 3rem;
+  padding-top: 5rem;
   justify-content: space-between;
   a {
     color: #ffd250;
@@ -14,4 +15,7 @@ export const Wrapper = styled.section`
       opacity: 0.8;
     }
   }
+  ${media.lessThan("medium")`
+    padding: 1rem 3rem 0 3rem;
+  `}
 `

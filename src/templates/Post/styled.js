@@ -40,8 +40,9 @@ export const Icon = styled.div`
 export const BackToBlog = styled.div`
   padding-left: 3rem;
   margin: 2rem 0;
-  display: flex;
-  align-items: center;
+  ${media.lessThan("medium")`
+    margin: 2rem 0 1rem 0;
+  `}
 `
 export const BackToBlogLink = styled(Link)`
   font-size: 0.9rem;

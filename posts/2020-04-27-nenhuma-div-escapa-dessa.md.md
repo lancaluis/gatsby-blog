@@ -2,7 +2,7 @@
 date: 2020-04-27 09:19:48
 title: Nenhuma DIV escapa dessa!
 description: Vamos aprender uns hacks para "Debugar" o CSS de uma forma prática e eficaz?
-thumbnail: gatsby.png
+thumbnail: html5.jpg
 ---
 
 > Opa! Me chamo Luís, sou Desenvolvedor Frontend e este é meu primeiro post!

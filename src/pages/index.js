@@ -25,7 +25,7 @@ const ProfileImage = () => {
 
 const IndexPage = ({ t }) => (
   <Wrapper>
-    <SEO title="Home" />
+    <SEO title={t("home.titlePage")} />
     <ProfileImage />
     <Description>
       <Title>{t("home.title")}</Title>

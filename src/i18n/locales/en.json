@@ -6,7 +6,8 @@
     "message": "Not found!"
   },
   "home": {
-    "title": "Title",
+    "titlePage": "Home",
+    "title": "Hey!",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum, tellus nec venenatis porta, lorem erat sollicitudin neque, at congue nibh mauris a turpis. Nullam lorem massa, facilisis id luctus eu, commodo non lectus. Vestibulum ac euismod lectus, a consectetur lacus.",
     "followMe": "Follow me"
   },
@@ -21,5 +22,12 @@
   "post": {
     "backToBlog": "Back to posts",
     "comments": "Comments"
+  },
+  "pagination": {
+    "previous": "Previous page",
+    "next": "Next page"
+  },
+  "about": {
+    "titlePage": "About me"
   }
 }
