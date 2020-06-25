@@ -19,8 +19,7 @@ function SEO({ description, lang, meta, title, thumbnail }) {
     `
   )
 
-  const url = site.siteMetadata.siteUrl
-  const ogImage = `${url}${thumbnail || "/assets/img/gatsby.png"}`
+  const ogImage = thumbnail || "https://willianjusten.com.br/assets/img/gatsby.png"
 
   const metaDescription = description || site.siteMetadata.description
 
