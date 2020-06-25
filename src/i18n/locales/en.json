@@ -19,7 +19,8 @@
     "blog": "blog"
   },
   "blog": {
-    "timeToRead": "min read"
+    "timeToRead": "min read",
+    "description": "Blog description"
   },
   "post": {
     "backToBlog": "Back to posts",

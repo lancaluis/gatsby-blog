@@ -20,7 +20,7 @@ const BlogList = props => {
 
   return (
     <Wrapper>
-      <SEO title="Blog" />
+      <SEO title="Blog" description={props.t("blog.description")} />
       {postList.map(
         ({
           node: {
