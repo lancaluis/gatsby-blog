@@ -18,7 +18,7 @@ const Pagination = ({
   <Wrapper>
     {!isFirst && <Link to={prevPage}>← {t("pagination.previous")}</Link>}
     <p>
-      {currentPage} de {numPages}
+      {currentPage} {t("pagination.of")} {numPages}
     </p>
     {!isLast && <Link to={nextPage}>{t("pagination.next")} →</Link>}
   </Wrapper>

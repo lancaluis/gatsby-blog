@@ -3,10 +3,12 @@
     "phrase": "Bem vindo ao meu portfólio!"
   },
   "notFound": {
-    "message": "Ops, página não encontrada"
+    "message": "Ops, página não encontrada",
+    "description": ""
   },
   "home": {
     "titlePage": "Início",
+    "descriptionPage": "Descrição da página",
     "title": "Opa!",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum, tellus nec venenatis porta, lorem erat sollicitudin neque, at congue nibh mauris a turpis. Nullam lorem massa, facilisis id luctus eu, commodo non lectus. Vestibulum ac euismod lectus, a consectetur lacus.",
     "followMe": "Segue lá"
@@ -25,9 +27,11 @@
   },
   "pagination": {
     "previous": "Página anterior",
-    "next": "Próxima página"
+    "next": "Próxima página",
+    "of": "de"
   },
   "about": {
-    "titlePage": "Sobre mim"
+    "titlePage": "Sobre mim",
+    "descriptionPage": "Descrição da página"
   }
 }

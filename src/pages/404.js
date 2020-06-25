@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const NotFoundPage = ({ t }) => (
   <>
-    <SEO title={t("notFound.message")} />
+    <SEO title={t("notFound.message")}  description={t("notFound.description")}/>
     <p>Not found</p>
   </>
 )

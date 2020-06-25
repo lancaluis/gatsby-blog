@@ -3,10 +3,12 @@
     "phrase": "Welcome to my portfolio!"
   },
   "notFound": {
-    "message": "Not found!"
+    "message": "Not found!",
+    "description": ""
   },
   "home": {
     "titlePage": "Home",
+    "descriptionPage": "Page description",
     "title": "Hey!",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum, tellus nec venenatis porta, lorem erat sollicitudin neque, at congue nibh mauris a turpis. Nullam lorem massa, facilisis id luctus eu, commodo non lectus. Vestibulum ac euismod lectus, a consectetur lacus.",
     "followMe": "Follow me"
@@ -25,9 +27,11 @@
   },
   "pagination": {
     "previous": "Previous page",
-    "next": "Next page"
+    "next": "Next page",
+    "of": "of"
   },
   "about": {
-    "titlePage": "About me"
+    "titlePage": "About me",
+    "descriptionPage": "Page description"
   }
 }

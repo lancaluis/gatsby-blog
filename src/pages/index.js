@@ -6,7 +6,14 @@ import SEO from "../components/seo"
 import SocialLinks from "../components/SocialLinks"
 import { translate } from "../i18n/translate"
 
-import { Wrapper, Description, Title, Text, TextBold, Image } from "../styles/home"
+import {
+  Wrapper,
+  Description,
+  Title,
+  Text,
+  TextBold,
+  Image,
+} from "../styles/home"
 
 const ProfileImage = () => {
   const { profileImage } = useStaticQuery(graphql`
@@ -25,7 +32,7 @@ const ProfileImage = () => {
 
 const IndexPage = ({ t }) => (
   <Wrapper>
-    <SEO title={t("home.titlePage")} />
+    <SEO title={t("home.titlePage")} description={t("home.descriptionPage")} />
     <ProfileImage />
     <Description>
       <Title>{t("home.title")}</Title>
