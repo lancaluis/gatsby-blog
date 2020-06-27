@@ -31,7 +31,7 @@ const BlogPost = ({ t, data, pageContext }) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        thumbnail={`https://compassionate-yonath-8a4429.netlify.app/${post.frontmatter.thumbnail}`}
+        thumbnail={`https://compassionate-yonath-8a4429.netlify.app/assets/img/${post.frontmatter.thumbnail}`}
       />
       <BackToBlog>
         <BackToBlogLink to="/blog">← {t("post.backToBlog")}</BackToBlogLink>
