@@ -32,6 +32,7 @@ const BlogPost = ({ t, data, pageContext }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description}
         thumbnail={`https://compassionate-yonath-8a4429.netlify.app/assets/img/${post.frontmatter.thumbnail}`}
+        url={post.fields.slug}
       />
       <BackToBlog>
         <BackToBlogLink to="/blog">← {t("post.backToBlog")}</BackToBlogLink>

@@ -31,7 +31,7 @@ const ProfileImage = () => {
 
 const IndexPage = ({ t }) => (
   <Wrapper>
-    <SEO title={t("home.titlePage")} description={t("home.descriptionPage")} />
+    <SEO title={t("home.titlePage")} description={t("home.descriptionPage")} url="https://luislanca.dev"/>
     <ProfileImage />
     <Description>
       <Title>{t("home.title")}</Title>
