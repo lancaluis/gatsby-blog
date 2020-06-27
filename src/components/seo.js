@@ -19,11 +19,8 @@ function SEO({ description, lang, meta, title, thumbnail }) {
     `
   )
 
-  // const ogImage =
-  //   thumbnail ||
-  //   "https://compassionate-yonath-8a4429.netlify.app/assets/img/gatsby.png"
   const ogImage =
-    `https://compassionate-yonath-8a4429.netlify.app/assets/img/${thumbnail}` ||
+    thumbnail ||
     "https://compassionate-yonath-8a4429.netlify.app/assets/img/gatsby.png"
 
   const metaDescription = description || site.siteMetadata.description
