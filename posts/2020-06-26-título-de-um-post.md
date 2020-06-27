@@ -2,7 +2,7 @@
 title: Título de um post
 description: Esta é uma descrição teste de um post criado pelo Netlify CMS
 date: 2020-06-26 05:58:39
-thumbnail: assets/img/janko-ferlic-sfl_qonmy00-unsplash.jpg
+thumbnail: oi.jpg
 ---
 ### Features
 

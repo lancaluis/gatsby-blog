@@ -25,7 +25,7 @@ const Pagination = ({
 )
 
 Pagination.propTypes = {
-  t: PropTypes.object.isRequired,
+  t: PropTypes.func.isRequired,
   isFirst: PropTypes.bool.isRequired,
   isLast: PropTypes.bool.isRequired,
   currentPage: PropTypes.number.isRequired,

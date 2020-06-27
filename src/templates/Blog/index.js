@@ -22,13 +22,16 @@ const BlogList = props => {
     <Wrapper>
       <SEO title="Blog" description={props.t("blog.description")} />
       {postList.map(
-        ({
-          node: {
-            frontmatter: { date, description, title, thumbnail },
-            timeToRead,
-            fields: { slug },
+        (
+          {
+            node: {
+              frontmatter: { date, description, title, thumbnail },
+              timeToRead,
+              fields: { slug },
+            },
           },
-        }) => (
+          i
+        ) => (
           <PostCard
             slug={slug}
             date={date}
@@ -36,6 +39,7 @@ const BlogList = props => {
             title={title}
             description={description}
             thumbnail={thumbnail}
+            key={i}
           />
         )
       )}

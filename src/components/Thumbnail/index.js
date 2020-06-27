@@ -8,15 +8,15 @@ const Thumbnail = props => (
     query={graphql`
       query {
         images: allFile(
-          filter: { absolutePath: { regex: "/images/thumbnail/" } }
+          filter: { absolutePath: { regex: "/static/assets/img" } }
         ) {
           edges {
             node {
               relativePath
               name
               childImageSharp {
-                sizes(maxWidth: 200) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxWidth: 580, quality: 100) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -25,15 +25,15 @@ const Thumbnail = props => (
       }
     `}
     render={data => {
-      const image = data.images.edges.find(n => {
-        return n.node.relativePath.includes(props.filename)
-      })
+      const image = data.images.edges.find(n =>
+        n.node.relativePath.includes(props.filename)
+      )
+
       if (!image) {
         return null
       }
 
-      const imageSizes = image.node.childImageSharp.sizes
-      return <Wrapper alt={props.alt} sizes={imageSizes} />
+      return <Wrapper alt={props.alt} fluid={image.node.childImageSharp.fluid} />
     }}
   />
 )

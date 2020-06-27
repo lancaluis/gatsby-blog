@@ -27,10 +27,6 @@ export const Text = styled.p`
   margin: 1.5rem 0 2.5rem 0;
   line-height: 1.4;
 `
-export const TextBold = styled.p`
-  font-size: 1rem;
-  font-weight: 500;
-`
 export const Image = styled(Img)`
   border-radius: 3px;
   ${media.lessThan("medium")`

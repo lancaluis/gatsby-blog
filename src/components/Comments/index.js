@@ -23,7 +23,7 @@ const Comments = ({ t, url, title }) => {
 }
 
 Comments.propTypes = {
-  t: PropTypes.object.isRequired,
+  t: PropTypes.func.isRequired,
   url: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 }

@@ -11,7 +11,6 @@ import {
   Description,
   Title,
   Text,
-  TextBold,
   Image,
 } from "../styles/home"
 
@@ -37,7 +36,7 @@ const IndexPage = ({ t }) => (
     <Description>
       <Title>{t("home.title")}</Title>
       <Text>{t("home.text")}</Text>
-      <TextBold>{t("home.followMe")}</TextBold>
+      <p>{t("home.followMe")}</p>
       <SocialLinks />
     </Description>
   </Wrapper>
