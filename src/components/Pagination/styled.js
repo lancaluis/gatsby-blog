@@ -16,6 +16,6 @@ export const Wrapper = styled.section`
     }
   }
   ${media.lessThan("medium")`
-    padding: 1rem 3rem 0 3rem;
+    padding: 3rem 3rem 0 2rem;
   `}
 `
