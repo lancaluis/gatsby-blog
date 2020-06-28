@@ -5,7 +5,7 @@ export const Wrapper = styled.section`
   align-items: center;
   color: #ffd250;
   display: flex;
-  padding-top: 5rem;
+  padding: 5rem 0 0 2rem;
   justify-content: space-between;
   a {
     color: #ffd250;
@@ -16,6 +16,6 @@ export const Wrapper = styled.section`
     }
   }
   ${media.lessThan("medium")`
-    padding: 3rem 3rem 0 2rem;
+    padding: 5rem 3rem 0 2rem;
   `}
 `

@@ -2,25 +2,10 @@
   "banner": {
     "phrase": "Bem vindo ao meu portfólio!"
   },
-  "notFound": {
-    "message": "Ops, página não encontrada",
-    "description": ""
-  },
-  "home": {
-    "titlePage": "Início",
-    "descriptionPage": "Descrição da página",
-    "title": "Opa!",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum, tellus nec venenatis porta, lorem erat sollicitudin neque, at congue nibh mauris a turpis. Nullam lorem massa, facilisis id luctus eu, commodo non lectus. Vestibulum ac euismod lectus, a consectetur lacus.",
-    "followMe": "Segue lá"
-  },
   "navbar": {
     "home": "início",
     "aboutMe": "sobre mim",
     "blog": "blog"
-  },
-  "blog": {
-    "timeToRead": "min de leitura",
-    "description": "Descrição do Blog"
   },
   "post": {
     "backToBlog": "Voltar aos posts",
@@ -31,8 +16,24 @@
     "next": "Próxima página",
     "of": "de"
   },
+  "notFound": {
+    "message": "404! Página não encontrada",
+    "description": "Ops! Parece que você está perdido não é mesmo?"
+  },
+  "home": {
+    "titlePage": "Luís Lança | Desenvolvedor Front-end",
+    "descriptionPage": "Descrição da Home",
+    "title": "Olá!",
+    "text": "Introdução do site",
+    "followMe": "Redes sociais"
+  },
+  "blog": {
+    "titlePage": "Blog | Luís Lança - Desenvolvedor Front-end",
+    "descriptionPage": "Descrição do Blog",
+    "timeToRead": "min de leitura"
+  },
   "about": {
-    "titlePage": "Sobre mim",
+    "titlePage": "Sobre mim | Luís Lança - Desenvolvedor Front-end",
     "descriptionPage": "Descrição da página"
   }
 }

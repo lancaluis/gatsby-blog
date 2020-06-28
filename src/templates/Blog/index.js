@@ -20,7 +20,11 @@ const BlogList = props => {
 
   return (
     <Wrapper>
-      <SEO title="Blog" description={props.t("blog.description")} url="https://luislanca.dev/blog"/>
+      <SEO
+        title={props.t("blog.titlePage")}
+        description={props.t("blog.descriptionPage")}
+        url="https://luislanca.dev/blog"
+      />
       {postList.map(
         (
           {
