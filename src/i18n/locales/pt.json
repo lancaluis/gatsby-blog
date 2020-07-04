@@ -22,18 +22,18 @@
   },
   "home": {
     "titlePage": "Luís Lança | Desenvolvedor Front-end",
-    "descriptionPage": "Descrição da Home",
+    "descriptionPage": "Apenas um Desenvolvedor de Software trabalhando de lugares não convencionais em busca de novas culturas e experiências de vida",
     "title": "Olá!",
-    "text": "Introdução do site",
+    "text": "Formado pela FATEC Jundiaí e diretamente do interior de São Paulo, Luís Lança é Desenvolvedor Front-end na Hi Platform e Instrutor de programação voluntário. Além do seu estranho fascínio por JavaScript, Luís costuma viajar em busca de um estilo de vida não convencional, tornando os Hostels seu local de trabalho predileto.",
     "followMe": "Redes sociais"
   },
   "blog": {
     "titlePage": "Blog | Luís Lança - Desenvolvedor Front-end",
-    "descriptionPage": "Descrição do Blog",
+    "descriptionPage": "Bem vindo ao meu Blog! As vezes escrevo algum conteúdo relevante sobre Tecnologia e Viagens",
     "timeToRead": "min de leitura"
   },
   "about": {
     "titlePage": "Sobre mim | Luís Lança - Desenvolvedor Front-end",
-    "descriptionPage": "Descrição da página"
+    "descriptionPage": "Apenas um Desenvolvedor de Software trabalhando de lugares não convencionais em busca de novas culturas e experiências de vida"
   }
 }
