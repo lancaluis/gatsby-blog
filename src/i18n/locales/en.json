@@ -2,25 +2,10 @@
   "banner": {
     "phrase": "Welcome to my portfolio!"
   },
-  "notFound": {
-    "message": "Not found!",
-    "description": ""
-  },
-  "home": {
-    "titlePage": "Home",
-    "descriptionPage": "Page description",
-    "title": "Hey!",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum, tellus nec venenatis porta, lorem erat sollicitudin neque, at congue nibh mauris a turpis. Nullam lorem massa, facilisis id luctus eu, commodo non lectus. Vestibulum ac euismod lectus, a consectetur lacus.",
-    "followMe": "Follow me"
-  },
   "navbar": {
     "home": "home",
     "aboutMe": "about me",
     "blog": "blog"
-  },
-  "blog": {
-    "timeToRead": "min read",
-    "description": "Blog description"
   },
   "post": {
     "backToBlog": "Back to posts",
@@ -31,8 +16,24 @@
     "next": "Next page",
     "of": "of"
   },
+  "notFound": {
+    "message": "Not found!",
+    "description": ""
+  },
+  "home": {
+    "titlePage": "Luís Lança | Front-end Developer",
+    "descriptionPage": "Just a Software Developer working from unconventional places in search of new cultures and life experiences",
+    "title": "Hey!",
+    "text": "",
+    "followMe": "Follow me"
+  },
+  "blog": {
+    "titlePage": "Blog | Luís Lança - Front-end Developer",
+    "descriptionPage": "Welcome to my Blog! Sometimes I write some relevant content about Technology and Travel",
+    "timeToRead": "min read"
+  },
   "about": {
-    "titlePage": "About me",
+    "titlePage": "About me | Luís Lança - Front-end Developer",
     "descriptionPage": "Page description"
   }
 }

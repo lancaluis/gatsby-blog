@@ -23,7 +23,6 @@ function SEO({ description, lang, meta, title, thumbnail, url }) {
     thumbnail ||
     "https://compassionate-yonath-8a4429.netlify.app/assets/img/gatsby.png"
 
-    console.log(ogImage)
   const metaDescription = description || site.siteMetadata.description
 
   return (
@@ -64,7 +63,7 @@ function SEO({ description, lang, meta, title, thumbnail, url }) {
         },
         {
           name: `twitter:site`,
-          content: '@luisslanca',
+          content: "@luisslanca",
         },
         {
           name: `twitter:image:src`,
