@@ -28,7 +28,7 @@ export const Text = styled.p`
   line-height: 1.4;
 `
 export const Image = styled(Img)`
-  border-radius: 3px;
+  border: #fff 2px solid;
   ${media.lessThan("medium")`
     margin: 2rem 0;
   `}

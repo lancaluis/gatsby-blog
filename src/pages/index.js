@@ -17,9 +17,9 @@ import {
 const ProfileImage = () => {
   const { profileImage } = useStaticQuery(graphql`
     query {
-      profileImage: file(relativePath: { eq: "luislanca.jpg" }) {
+      profileImage: file(relativePath: { eq: "eu.png" }) {
         childImageSharp {
-          fixed(width: 200, height: 200) {
+          fixed(width: 200, height: 300) {
             ...GatsbyImageSharpFixed
           }
         }
