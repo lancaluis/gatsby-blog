@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 `
 export const Description = styled.div`
   margin-left: 4rem;
-  max-width: 500px;
+  max-width: 550px;
   ${media.lessThan("medium")`
     margin-left: 0;
   `}
@@ -20,6 +20,7 @@ export const Description = styled.div`
 export const Title = styled.h1`
   font-size: 2rem;
   font-weight: 500;
+  line-height: 1.6;
 `
 export const Text = styled.p`
   font-size: 1rem;

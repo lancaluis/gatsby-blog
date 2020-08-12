@@ -8,7 +8,7 @@ import { Wrapper } from "./styled"
 const Footer = ({ t }) => (
   <Wrapper>
     <p>
-      {new Date().getFullYear()} &copy; Developed by me. Eat fries{" "}
+      {new Date().getFullYear()} &copy; {t("footer.copy")}{" "}
       <span role="img" aria-label="Fries">
         🍟
       </span>

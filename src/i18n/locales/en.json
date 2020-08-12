@@ -1,6 +1,6 @@
 {
   "banner": {
-    "phrase": "Welcome to my portfolio!"
+    "phrase": "Welcome to my blog!"
   },
   "navbar": {
     "home": "home",
@@ -16,15 +16,18 @@
     "next": "Next page",
     "of": "of"
   },
+  "footer": {
+    "copy": "Developed by me. Eat fries"
+  },
   "notFound": {
-    "message": "Not found!",
-    "description": ""
+    "message": "404! Page not found",
+    "description": "Damn! Seems like you're lost"
   },
   "home": {
     "titlePage": "Luís Lança | Front-end Developer",
     "descriptionPage": "Just a Software Developer working from unconventional places in search of new cultures and life experiences",
-    "title": "Hey!",
-    "text": "",
+    "title": "What’s up? My name is Luís...",
+    "text": "I’m a Software Developer working from non-conventional locations, seeking different cultures and new life experiences. I'm keen on urban cycling, handmade burgers and E-accessibility.",
     "followMe": "Follow me"
   },
   "blog": {

@@ -1,6 +1,6 @@
 {
   "banner": {
-    "phrase": "Bem vindo ao meu portfólio!"
+    "phrase": "Bem vindo ao meu blog!"
   },
   "navbar": {
     "home": "início",
@@ -15,6 +15,9 @@
     "previous": "Página anterior",
     "next": "Próxima página",
     "of": "de"
+  },
+  "footer": {
+    "copy": "Desenvolvido por mim. Coma fritas"
   },
   "notFound": {
     "message": "404! Página não encontrada",
