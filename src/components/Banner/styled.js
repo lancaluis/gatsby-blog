@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   font-size: 0.8rem;
 `
 
-export const Phrase = styled.p`
+export const Version = styled.p`
   ${media.lessThan("medium")`
    display: none;
   `}

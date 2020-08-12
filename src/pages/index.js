@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from "gatsby"
 
 import SEO from "../components/seo"
-import Layout from "../components/Layout"
 import SocialLinks from "../components/SocialLinks"
 import { translate } from "../i18n/translate"
 
@@ -25,22 +24,20 @@ const ProfileImage = () => {
 }
 
 const IndexPage = ({ t }) => (
-  <Layout>
-    <Wrapper>
-      <SEO
-        title={t("home.titlePage")}
-        description={t("home.descriptionPage")}
-        url="https://luislanca.dev"
-      />
-      <ProfileImage />
-      <Description>
-        <Title>{t("home.title")}</Title>
-        <Text>{t("home.text")}</Text>
-        <p>{t("home.followMe")}</p>
-        <SocialLinks />
-      </Description>
-    </Wrapper>
-  </Layout>
+  <Wrapper>
+    <SEO
+      title={t("home.titlePage")}
+      description={t("home.descriptionPage")}
+      url="https://luislanca.dev"
+    />
+    <ProfileImage />
+    <Description>
+      <Title>{t("home.title")}</Title>
+      <Text>{t("home.text")}</Text>
+      <p>{t("home.followMe")}</p>
+      <SocialLinks />
+    </Description>
+  </Wrapper>
 )
 
 IndexPage.propTypes = {

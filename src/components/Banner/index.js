@@ -2,15 +2,15 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import { translate } from "../../i18n/translate"
-import TranslationFlags from '../TranslationFlags'
+import TranslationFlags from "../TranslationFlags"
 
-import { Wrapper, Phrase } from "./styled"
+import { Wrapper, Phrase, Version } from "./styled"
 
 const Banner = ({ t }) => (
   <Wrapper>
-    <Phrase>{t("banner.phrase")}</Phrase>
-    <p>v2.0.0</p>
-    <TranslationFlags/>
+    <p>{t("banner.phrase")}</p>
+    <Version>v2.0.0</Version>
+    <TranslationFlags />
   </Wrapper>
 )
 
