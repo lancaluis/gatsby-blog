@@ -25,3 +25,11 @@ export const MenuLink = styled(Link)`
     transition: 0.3s;
   }
 `
+export const Brand = styled(Link)`
+  font-size: 1rem;
+  font-weight: 300;
+`
+export const Span = styled.span`
+  color: #ffd250;
+  font-weight: 500;
+`

@@ -3,11 +3,13 @@ import PropTypes from "prop-types"
 
 import { translate } from "../../i18n/translate"
 
-import { Wrapper, NavBar, MenuLink } from "./styled"
+import { Wrapper, NavBar, MenuLink, Brand, Span } from "./styled"
 
 const Header = ({ t }) => (
   <Wrapper>
-    <p>Logo</p>
+    <Brand to="/">
+      Luís <Span>{`{ Lança }`}</Span>
+    </Brand>
     <NavBar>
       <MenuLink to="/" activeClassName="active">
         {t("navbar.home")}
