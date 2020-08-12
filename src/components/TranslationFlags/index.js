@@ -1,8 +1,8 @@
 import React from "react"
 import { useTranslation } from "react-i18next"
 
-import en from "../../images/en.svg"
-import pt from "../../images/pt.svg"
+import en from "../../images/uk.png"
+import pt from "../../images/brazil.png"
 import { Wrapper, Flags } from "./styled"
 
 const flags = [
