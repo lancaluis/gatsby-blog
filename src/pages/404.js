@@ -2,13 +2,17 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import { translate } from "../i18n/translate"
+import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
 const NotFoundPage = ({ t }) => (
-  <>
-    <SEO title={t("notFound.message")}  description={t("notFound.description")}/>
+  <Layout>
+    <SEO
+      title={t("notFound.message")}
+      description={t("notFound.description")}
+    />
     <p>Not found</p>
-  </>
+  </Layout>
 )
 
 NotFoundPage.propTypes = {

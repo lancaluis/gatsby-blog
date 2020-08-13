@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 
 import SEO from "../../components/seo"
+import Layout from "../../components/Layout"
 import PostCard from "../../components/PostCard"
 import { translate } from "../../i18n/translate"
 import Pagination from "../../components/Pagination"
@@ -19,43 +20,45 @@ const BlogList = props => {
   const nextPage = `/page/${currentPage + 1}`
 
   return (
-    <Wrapper>
-      <SEO
-        title={props.t("blog.titlePage")}
-        description={props.t("blog.descriptionPage")}
-        url="https://luislanca.dev/blog"
-      />
-      {postList.map(
-        (
-          {
-            node: {
-              frontmatter: { date, description, title, thumbnail },
-              timeToRead,
-              fields: { slug },
+    <Layout>
+      <Wrapper>
+        <SEO
+          title={props.t("blog.titlePage")}
+          description={props.t("blog.descriptionPage")}
+          url="https://luislanca.dev/blog"
+        />
+        {postList.map(
+          (
+            {
+              node: {
+                frontmatter: { date, description, title, thumbnail },
+                timeToRead,
+                fields: { slug },
+              },
             },
-          },
-          i
-        ) => (
-          <PostCard
-            slug={slug}
-            date={date}
-            timeToRead={timeToRead}
-            title={title}
-            description={description}
-            thumbnail={thumbnail}
-            key={i}
-          />
-        )
-      )}
-      <Pagination
-        isFirst={isFirst}
-        isLast={isLast}
-        currentPage={currentPage}
-        numPages={numPages}
-        prevPage={prevPage}
-        nextPage={nextPage}
-      />
-    </Wrapper>
+            i
+          ) => (
+            <PostCard
+              slug={slug}
+              date={date}
+              timeToRead={timeToRead}
+              title={title}
+              description={description}
+              thumbnail={thumbnail}
+              key={i}
+            />
+          )
+        )}
+        <Pagination
+          isFirst={isFirst}
+          isLast={isLast}
+          currentPage={currentPage}
+          numPages={numPages}
+          prevPage={prevPage}
+          nextPage={nextPage}
+        />
+      </Wrapper>
+    </Layout>
   )
 }
 

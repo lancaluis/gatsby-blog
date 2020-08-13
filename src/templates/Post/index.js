@@ -5,6 +5,7 @@ import { Calendar } from "@styled-icons/boxicons-solid/Calendar"
 import { TimeFive } from "@styled-icons/boxicons-solid/TimeFive"
 
 import SEO from "../../components/seo"
+import Layout from "../../components/Layout"
 import RecommendedPosts from "../../components/RecommendedPosts"
 import Comments from "../../components/Comments"
 import { translate } from "../../i18n/translate"
@@ -27,35 +28,37 @@ const BlogPost = ({ t, data, pageContext }) => {
   const previous = pageContext.previousPost
 
   return (
-    <Wrapper>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description}
-        thumbnail={`https://compassionate-yonath-8a4429.netlify.app/assets/img/${post.frontmatter.thumbnail}`}
-        url={post.fields.slug}
-      />
-      <BackToBlog>
-        <BackToBlogLink to="/blog">← {t("post.backToBlog")}</BackToBlogLink>
-      </BackToBlog>
-      <Header>
-        <Date>
-          <Icon>
-            <Calendar />
-          </Icon>
-          <p>{post.frontmatter.date}</p>
-          <Icon>
-            <TimeFive />
-          </Icon>
-          <p>
-            {post.timeToRead} {t("blog.timeToRead")}
-          </p>
-        </Date>
-        <Title>{post.frontmatter.title}</Title>
-      </Header>
-      <Main dangerouslySetInnerHTML={{ __html: post.html }}></Main>
-      <RecommendedPosts next={next} previous={previous} />
-      <Comments url={post.fields.slug} title={post.frontmatter.title} />
-    </Wrapper>
+    <Layout>
+      <Wrapper>
+        <SEO
+          title={post.frontmatter.title}
+          description={post.frontmatter.description}
+          thumbnail={`https://compassionate-yonath-8a4429.netlify.app/assets/img/${post.frontmatter.thumbnail}`}
+          url={post.fields.slug}
+        />
+        <BackToBlog>
+          <BackToBlogLink to="/blog">← {t("post.backToBlog")}</BackToBlogLink>
+        </BackToBlog>
+        <Header>
+          <Date>
+            <Icon>
+              <Calendar />
+            </Icon>
+            <p>{post.frontmatter.date}</p>
+            <Icon>
+              <TimeFive />
+            </Icon>
+            <p>
+              {post.timeToRead} {t("blog.timeToRead")}
+            </p>
+          </Date>
+          <Title>{post.frontmatter.title}</Title>
+        </Header>
+        <Main dangerouslySetInnerHTML={{ __html: post.html }}></Main>
+        <RecommendedPosts next={next} previous={previous} />
+        <Comments url={post.fields.slug} title={post.frontmatter.title} />
+      </Wrapper>
+    </Layout>
   )
 }
 
