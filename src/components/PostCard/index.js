@@ -7,14 +7,7 @@ import { TimeFive } from "@styled-icons/boxicons-solid/TimeFive"
 import { translate } from "../../i18n/translate"
 import Thumbnail from "../Thumbnail"
 
-import {
-  Wrapper,
-  Infos,
-  Title,
-  Description,
-  Date,
-  Icon,
-} from "./styled"
+import * as S from "./styled"
 
 const PostCard = ({
   t,
@@ -27,25 +20,25 @@ const PostCard = ({
 }) => {
   return (
     <Link to={slug}>
-      <Wrapper>
+      <S.Wrapper>
         <Thumbnail filename={thumbnail} alt={title} />
-        <Infos>
-          <Date>
-            <Icon>
+        <S.Infos>
+          <S.Date>
+            <S.Icon>
               <Calendar />
-            </Icon>
+            </S.Icon>
             <p>{date}</p>
-            <Icon>
+            <S.Icon>
               <TimeFive />
-            </Icon>
+            </S.Icon>
             <p>
               {timeToRead} {t("blog.timeToRead")}
             </p>
-          </Date>
-          <Title>{title}</Title>
-          <Description>{description}</Description>
-        </Infos>
-      </Wrapper>
+          </S.Date>
+          <S.Title>{title}</S.Title>
+          <S.Description>{description}</S.Description>
+        </S.Infos>
+      </S.Wrapper>
     </Link>
   )
 }

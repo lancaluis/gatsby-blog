@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-import { Wrapper } from "./styled"
+import * as S from "./styled"
 
 const Thumbnail = props => (
   <StaticQuery
@@ -33,7 +33,7 @@ const Thumbnail = props => (
         return null
       }
 
-      return <Wrapper alt={props.alt} fluid={image.node.childImageSharp.fluid} />
+      return <S.Wrapper alt={props.alt} fluid={image.node.childImageSharp.fluid} />
     }}
   />
 )

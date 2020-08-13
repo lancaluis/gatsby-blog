@@ -3,17 +3,17 @@ import PropTypes from "prop-types"
 
 import { translate } from "../../i18n/translate"
 
-import { Wrapper } from "./styled"
+import * as S from "./styled"
 
 const Footer = ({ t }) => (
-  <Wrapper>
+  <S.Wrapper>
     <p>
       {new Date().getFullYear()} &copy; {t("footer.copy")}{" "}
       <span role="img" aria-label="Fries">
         🍟
       </span>
     </p>
-  </Wrapper>
+  </S.Wrapper>
 )
 
 Footer.propTypes = {

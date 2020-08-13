@@ -4,21 +4,21 @@ import ReactDisqusComments from "react-disqus-comments"
 
 import { translate } from "../../i18n/translate"
 
-import { Wrapper, Title } from "./styled"
+import * as S from "./styled"
 
 const Comments = ({ t, url, title }) => {
   const completeURL = `https://luislanca.dev${url}`
 
   return (
-    <Wrapper>
-      <Title>{t("post.comments")}</Title>
+    <S.Wrapper>
+      <S.Title>{t("post.comments")}</S.Title>
       <ReactDisqusComments
         shortname="luislanca"
         identifier={completeURL}
         title={title}
         url={completeURL}
       />
-    </Wrapper>
+    </S.Wrapper>
   )
 }
 

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next"
 
 import en from "../../images/uk.png"
 import pt from "../../images/brazil.png"
-import { Wrapper, Flags } from "./styled"
+import * as S from "./styled"
 
 const flags = [
   { path: pt, name: "pt" },
@@ -18,13 +18,13 @@ const TranslationFlags = props => {
   }
 
   return (
-    <Wrapper>
+    <S.Wrapper>
       {flags.map(flag => (
         <div onClick={() => handleClick(flag.name)} key={flag.name}>
-          <Flags src={flag.path} alt={flag.name} />
+          <S.Flags src={flag.path} alt={flag.name} />
         </div>
       ))}
-    </Wrapper>
+    </S.Wrapper>
   )
 }
 

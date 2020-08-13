@@ -10,16 +10,7 @@ import RecommendedPosts from "../../components/RecommendedPosts"
 import Comments from "../../components/Comments"
 import { translate } from "../../i18n/translate"
 
-import {
-  Wrapper,
-  Main,
-  BackToBlog,
-  BackToBlogLink,
-  Icon,
-  Header,
-  Title,
-  Date,
-} from "./styled"
+import * as S from "./styled"
 
 const BlogPost = ({ t, data, pageContext }) => {
   const post = data.markdownRemark
@@ -29,35 +20,35 @@ const BlogPost = ({ t, data, pageContext }) => {
 
   return (
     <Layout>
-      <Wrapper>
+      <S.Wrapper>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description}
           thumbnail={`https://compassionate-yonath-8a4429.netlify.app/assets/img/${post.frontmatter.thumbnail}`}
           url={post.fields.slug}
         />
-        <BackToBlog>
-          <BackToBlogLink to="/blog">← {t("post.backToBlog")}</BackToBlogLink>
-        </BackToBlog>
-        <Header>
-          <Date>
-            <Icon>
+        <S.BackToBlog>
+          <S.BackToBlogLink to="/blog">← {t("post.backToBlog")}</S.BackToBlogLink>
+        </S.BackToBlog>
+        <S.Header>
+          <S.Date>
+            <S.Icon>
               <Calendar />
-            </Icon>
+            </S.Icon>
             <p>{post.frontmatter.date}</p>
-            <Icon>
+            <S.Icon>
               <TimeFive />
-            </Icon>
+            </S.Icon>
             <p>
               {post.timeToRead} {t("blog.timeToRead")}
             </p>
-          </Date>
-          <Title>{post.frontmatter.title}</Title>
-        </Header>
-        <Main dangerouslySetInnerHTML={{ __html: post.html }}></Main>
+          </S.Date>
+          <S.Title>{post.frontmatter.title}</S.Title>
+        </S.Header>
+        <S.Main dangerouslySetInnerHTML={{ __html: post.html }}></S.Main>
         <RecommendedPosts next={next} previous={previous} />
         <Comments url={post.fields.slug} title={post.frontmatter.title} />
-      </Wrapper>
+      </S.Wrapper>
     </Layout>
   )
 }

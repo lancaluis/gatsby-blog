@@ -8,7 +8,7 @@ import PostCard from "../../components/PostCard"
 import { translate } from "../../i18n/translate"
 import Pagination from "../../components/Pagination"
 
-import { Wrapper } from "./styled"
+import * as S from "./styled"
 
 const BlogList = props => {
   const postList = props.data.allMarkdownRemark.edges
@@ -21,7 +21,7 @@ const BlogList = props => {
 
   return (
     <Layout>
-      <Wrapper>
+      <S.Wrapper>
         <SEO
           title={props.t("blog.titlePage")}
           description={props.t("blog.descriptionPage")}
@@ -57,7 +57,7 @@ const BlogList = props => {
           prevPage={prevPage}
           nextPage={nextPage}
         />
-      </Wrapper>
+      </S.Wrapper>
     </Layout>
   )
 }

@@ -4,14 +4,14 @@ import PropTypes from "prop-types"
 import { translate } from "../../i18n/translate"
 import TranslationFlags from "../TranslationFlags"
 
-import { Wrapper, Phrase, Version } from "./styled"
+import * as S from "./styled"
 
 const Banner = ({ t }) => (
-  <Wrapper>
+  <S.Wrapper>
     <p>{t("banner.phrase")}</p>
-    <Version>v2.0.0</Version>
+    <S.Version>v2.0.0</S.Version>
     <TranslationFlags />
-  </Wrapper>
+  </S.Wrapper>
 )
 
 Banner.propTypes = {

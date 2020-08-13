@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 import { translate } from "../../i18n/translate"
 
-import { Wrapper } from "./styled"
+import * as S from "./styled"
 
 const Pagination = ({
   isFirst,
@@ -15,13 +15,13 @@ const Pagination = ({
   nextPage,
   t,
 }) => (
-  <Wrapper>
+  <S.Wrapper>
     {!isFirst && <Link to={prevPage}>← {t("pagination.previous")}</Link>}
     <p>
       {currentPage} {t("pagination.of")} {numPages}
     </p>
     {!isLast && <Link to={nextPage}>{t("pagination.next")} →</Link>}
-  </Wrapper>
+  </S.Wrapper>
 )
 
 Pagination.propTypes = {
