@@ -7,17 +7,17 @@ import Footer from "../Footer"
 import { translate } from "../../i18n/translate"
 
 import GlobalStyles from "../../styles/global"
-import { Container, Main } from "./styled"
+import * as S from "./styled"
 
 const Layout = ({ children }) => {
   return (
-    <Container>
+    <S.Container>
       <GlobalStyles />
       <Banner />
       <Header />
-      <Main>{children}</Main>
+      <S.Main>{children}</S.Main>
       <Footer />
-    </Container>
+    </S.Container>
   )
 }
 

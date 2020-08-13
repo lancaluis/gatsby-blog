@@ -7,7 +7,7 @@ import Layout from "../components/Layout"
 import SocialLinks from "../components/SocialLinks"
 import { translate } from "../i18n/translate"
 
-import * as S from "../components/Layout/home"
+import * as S from "../styles/home"
 
 const ProfileImage = () => {
   const { profileImage } = useStaticQuery(graphql`
