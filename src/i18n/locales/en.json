@@ -25,18 +25,18 @@
   },
   "home": {
     "titlePage": "Luís Lança | Front-end Developer",
-    "descriptionPage": "Just a Software Developer working from unconventional places in search of new cultures and life experiences",
+    "descriptionPage": "Just a Software Developer working from non-conventional locations, seeking different cultures and new life experiences",
     "title": "What’s up? My name is Luís...",
     "text": "I’m a Software Developer working from non-conventional locations, seeking different cultures and new life experiences. I'm keen on urban cycling, handmade burgers and E-accessibility.",
     "followMe": "Follow me"
   },
   "blog": {
     "titlePage": "Blog | Luís Lança - Front-end Developer",
-    "descriptionPage": "Welcome to my Blog! Sometimes I write some relevant content about Technology and Travel",
+    "descriptionPage": "Welcome to my Blog! Sometimes I write some relevant content about technology and travel",
     "timeToRead": "min read"
   },
   "about": {
     "titlePage": "About me | Luís Lança - Front-end Developer",
-    "descriptionPage": "Page description"
+    "descriptionPage": "Just a Software Developer working from non-conventional locations, seeking different cultures and new life experiences"
   }
 }
