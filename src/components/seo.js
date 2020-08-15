@@ -21,7 +21,7 @@ function SEO({ description, lang, meta, title, thumbnail, url }) {
 
   const ogImage =
     thumbnail ||
-    "https://compassionate-yonath-8a4429.netlify.app/assets/img/gatsby.png"
+    "https://luislanca.dev/assets/img/gatsby.png"
 
   const metaDescription = description || site.siteMetadata.description
 
@@ -87,7 +87,7 @@ function SEO({ description, lang, meta, title, thumbnail, url }) {
 }
 
 SEO.defaultProps = {
-  lang: `pt-br`,
+  lang: `en`,
   meta: [],
   description: ``,
 }
