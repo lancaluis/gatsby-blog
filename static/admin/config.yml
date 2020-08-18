@@ -1,5 +1,6 @@
 backend:
   name: github
+  auth_endpoint: auth
   repo: lancaluis/resume
   branch: master
   site_domain: luislanca.dev
