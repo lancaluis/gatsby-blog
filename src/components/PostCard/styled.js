@@ -38,12 +38,14 @@ export const Title = styled.h1`
   margin: 1.5rem 0;
   color: #ffd250;
   letter-spacing: 1px;
+  line-height: 1.2;
   ${media.lessThan("medium")`
     line-height: 1.2;
   `}
 `
 export const Description = styled.p`
   font-weight: 300;
+  line-height: 1.3;
   ${media.lessThan("medium")`
     line-height: 1.4;
   `}
