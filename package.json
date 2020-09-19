@@ -19,6 +19,7 @@
     "gatsby-plugin-sharp": "^2.6.11",
     "gatsby-plugin-sitemap": "^2.4.6",
     "gatsby-plugin-styled-components": "^3.3.10",
+    "gatsby-remark-embed-spotify": "^2.1.1",
     "gatsby-remark-images": "^3.3.12",
     "gatsby-remark-lazy-load": "^1.0.2",
     "gatsby-remark-prismjs": "^3.5.5",

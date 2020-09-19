@@ -46,6 +46,12 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          {
+            resolve: "gatsby-remark-embed-spotify",
+            options: {
+              height: 100,
+            },
+          },
           `gatsby-remark-lazy-load`,
           `gatsby-remark-prismjs`,
           `gatsby-plugin-sitemap`,

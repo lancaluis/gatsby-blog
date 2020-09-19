@@ -1,6 +1,10 @@
 import styled from "styled-components"
 import media from "styled-media-query"
+import { Link } from "gatsby"
 
+export const LinkWrapper = styled(Link)`
+  max-width: 70%;
+`
 export const Wrapper = styled.section`
   display: flex;
   align-items: center;
@@ -45,7 +49,7 @@ export const Title = styled.h1`
 `
 export const Description = styled.p`
   font-weight: 300;
-  line-height: 1.3;
+  line-height: 1.5;
   ${media.lessThan("medium")`
     line-height: 1.4;
   `}

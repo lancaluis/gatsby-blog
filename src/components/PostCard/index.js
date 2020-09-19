@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
 import { Calendar } from "@styled-icons/boxicons-solid/Calendar"
 import { TimeFive } from "@styled-icons/boxicons-solid/TimeFive"
 
@@ -19,7 +18,7 @@ const PostCard = ({
   description,
 }) => {
   return (
-    <Link to={slug}>
+    <S.LinkWrapper to={slug}>
       <S.Wrapper>
         <Thumbnail filename={thumbnail} alt={title} />
         <S.Infos>
@@ -39,7 +38,7 @@ const PostCard = ({
           <S.Description>{description}</S.Description>
         </S.Infos>
       </S.Wrapper>
-    </Link>
+    </S.LinkWrapper>
   )
 }
 

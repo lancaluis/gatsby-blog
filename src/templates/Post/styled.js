@@ -103,7 +103,7 @@ export const Main = styled.section`
     display: block;
     max-width: 100%;
     border-radius: 3px;
-    margin: 0 auto;
+    margin: 0;
   }
   iframe {
     padding: 0 1.6rem 1.6rem;
