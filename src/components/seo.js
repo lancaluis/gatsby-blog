@@ -21,7 +21,7 @@ function SEO({ description, lang, meta, title, thumbnail, url }) {
 
   const ogImage =
     thumbnail ||
-    "https://luislanca.dev/assets/img/gatsby.png"
+    "https://luislanca.dev/assets/img/eu.png"
 
   const metaDescription = description || site.siteMetadata.description
 
