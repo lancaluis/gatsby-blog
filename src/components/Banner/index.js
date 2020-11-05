@@ -9,7 +9,7 @@ import * as S from "./styled"
 const Banner = ({ t }) => (
   <S.Wrapper>
     <p>{t("banner.phrase")}</p>
-    <S.Version>v2.0.0</S.Version>
+    <S.Version>v2.1.0</S.Version>
     <TranslationFlags />
   </S.Wrapper>
 )

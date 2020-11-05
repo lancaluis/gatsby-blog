@@ -14,9 +14,9 @@ const Header = ({ t }) => (
       <S.MenuLink to="/" activeClassName="active">
         {t("navbar.home")}
       </S.MenuLink>
-      {/* <MenuLink to="/about" activeClassName="active">
+      <S.MenuLink to="/about" activeClassName="active">
         {t("navbar.aboutMe")}
-      </MenuLink> */}
+      </S.MenuLink>
       <S.MenuLink to="/blog" activeClassName="active">
         {t("navbar.blog")}
       </S.MenuLink>

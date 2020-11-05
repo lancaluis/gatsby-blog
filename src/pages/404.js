@@ -11,7 +11,7 @@ const NotFoundPage = ({ t }) => (
       title={t("notFound.message")}
       description={t("notFound.description")}
     />
-    <p>Not found</p>
+    <p>{t("notFound.message")}</p>
   </Layout>
 )
 

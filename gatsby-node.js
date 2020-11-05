@@ -34,7 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
               slug
             }
             frontmatter {
-              date(locale: "pt-br", formatString: "DD [/] MM [/] YYYY")
+              date(locale: "en", formatString: "MM [/] DD [/] YYYY")
               description
               title
               thumbnail

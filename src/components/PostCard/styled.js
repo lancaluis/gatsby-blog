@@ -11,6 +11,7 @@ export const Wrapper = styled.section`
   margin: 4rem 2rem 0 2rem;
   ${media.lessThan("medium")`
     flex-direction: column;
+    margin: 4rem 0 0 0;
   `}
 `
 export const Infos = styled.div`
