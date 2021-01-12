@@ -59,6 +59,19 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: `Montserrat`,
+              variants: [100, 300, 500, 700],
+            },
+          ],
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
@@ -72,8 +85,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ffd250`,
+        theme_color: `#ffd250`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`,
       },
