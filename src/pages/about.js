@@ -41,7 +41,7 @@ const AboutPage = ({ t }) => {
 
         <S.Title>About me</S.Title>
         <S.Text>
-          Hi, my name is Luis. I'm a Front-End Developer passionate in UX/UI Design. Currently, I work for a Brazilian company called <S.Mail href="https://www.hiplatform.com/" target="_blank">Hi Platform</S.Mail>. In my projects I always delivery friendly interfaces thinking on
+          Hi, my name is Luis. I'm a Front-End Developer passionate about UX/UI Design. Currently, I work for a Brazilian company called <S.Mail href="https://www.hiplatform.com/" target="_blank">Hi Platform</S.Mail>. In my projects I always delivery friendly interfaces thinking on
           E-accessibility and usability. Since 2019 I work from non-conventional locations, seeking different cultures
           and new life experiences, maybe am I a Digital Nomad? I have no idea!
         </S.Text>
