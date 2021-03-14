@@ -1,12 +1,26 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Calendar } from "@styled-icons/boxicons-solid/Calendar"
-import { TimeFive } from "@styled-icons/boxicons-solid/TimeFive"
+import { graphql, useStaticQuery } from "gatsby"
 
 import { translate } from "../../i18n/translate"
 import Thumbnail from "../Thumbnail"
 
 import * as S from "./styled"
+
+const ProfileImage = () => {
+  const { profileImage } = useStaticQuery(graphql`
+    query {
+      profileImage: file(relativePath: { eq: "eu.png" }) {
+        childImageSharp {
+          fixed(width: 35, height: 35) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
+  return <S.AuthorImage fixed={profileImage.childImageSharp.fixed} />
+}
 
 const PostCard = ({
   t,
@@ -19,25 +33,20 @@ const PostCard = ({
 }) => {
   return (
     <S.LinkWrapper to={slug}>
-      <S.Wrapper>
-        <Thumbnail filename={thumbnail} alt={title} />
-        <S.Infos>
-          <S.Date>
-            <S.Icon>
-              <Calendar />
-            </S.Icon>
-            <p>{date}</p>
-            <S.Icon>
-              <TimeFive />
-            </S.Icon>
-            <p>
-              {timeToRead} {t("blog.timeToRead")}
-            </p>
-          </S.Date>
-          <S.Title>{title}</S.Title>
-          <S.Description>{description}</S.Description>
-        </S.Infos>
-      </S.Wrapper>
+      <Thumbnail filename={thumbnail} alt={title} />
+      <S.Infos>
+        <S.Title>{title}</S.Title>
+        <S.Description>{description}</S.Description>
+        <S.SubInfos>
+          <ProfileImage />
+          <S.AuthorInfo>
+            <S.AuthorName>Luís Lança</S.AuthorName>
+            <S.DateTime>
+              <p>{date} - {timeToRead} {t("blog.timeToRead")}</p>
+            </S.DateTime>
+          </S.AuthorInfo>
+        </S.SubInfos>
+      </S.Infos>
     </S.LinkWrapper>
   )
 }

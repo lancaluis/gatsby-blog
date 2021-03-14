@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
 `
 export const RecommendedLink = styled(Link)`
   align-items: center;
-  color: #ffd250;
+  color: #D5603F;
   display: flex;
   padding: 3rem;
   text-decoration: none;

@@ -122,12 +122,13 @@ section {
 }
 body {
   line-height: 1;
-  background: #373640;
-  color: #fff;
+  background: #fff;
+  color: #373640;
   font-family: "Montserrat";
+  padding: 2em 3em; 
 }
 a {
-  color: #fff;
+  color: #373640;
   text-decoration: none;
 }
 ol,

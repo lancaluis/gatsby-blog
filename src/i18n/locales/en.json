@@ -4,7 +4,8 @@
   },
   "navbar": {
     "home": "home",
-    "aboutMe": "about",
+    "aboutMe": "about me",
+    "projects": "projects",
     "blog": "blog"
   },
   "post": {
@@ -17,7 +18,9 @@
     "of": "of"
   },
   "footer": {
-    "copy": "Developed by me. Eat fries"
+    "copy": "Version",
+    "phrase": "Make each day a new horizon",
+    "author": "Christopher Mccandless"
   },
   "notFound": {
     "message": "404! Page not found",

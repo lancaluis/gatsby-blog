@@ -1,5 +1,5 @@
 ---
-date: "2020-05-01 01:01:51"
+date: "2020-11-01 01:01:51"
 title: Traduzindo as docs do Gatsby em 4 passos
 description: Comece a contribuir com a comunidade Gatsby hoje mesmo!
 thumbnail: gatsby.png

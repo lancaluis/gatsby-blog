@@ -3,12 +3,12 @@ import media from "styled-media-query"
 
 export const Wrapper = styled.section`
   align-items: center;
-  color: #ffd250;
+  color: #D5603F;
   display: flex;
-  padding: 5rem 0 0 2rem;
-  justify-content: space-between;
+  padding-bottom: 2rem;
+  justify-content: space-around;
   a {
-    color: #ffd250;
+    color: #D5603F;
     text-decoration: none;
     transition: 0.5s;
     &:hover {

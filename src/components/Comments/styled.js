@@ -9,13 +9,13 @@ export const Wrapper = styled.section`
 
   #disqus_thread {
     a {
-      color: #ffd250 !important;
+      color: #D5603F !important;
     }
   }
 `
 
 export const Title = styled.h2`
-  color: #fff;
+  color: #373640;
   font-size: 1.5rem;
   font-weight: 500;
   padding-bottom: 2rem;

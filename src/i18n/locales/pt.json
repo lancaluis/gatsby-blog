@@ -1,10 +1,8 @@
 {
-  "banner": {
-    "phrase": "Bem vindo ao meu blog!"
-  },
   "navbar": {
     "home": "início",
-    "aboutMe": "sobre",
+    "aboutMe": "sobre mim",
+    "projects": "projetos",
     "blog": "blog"
   },
   "post": {
@@ -17,7 +15,9 @@
     "of": "de"
   },
   "footer": {
-    "copy": "Desenvolvido por mim. Coma fritas"
+    "copy": "Versão",
+    "phrase": "Faça de cada dia um novo horizonte",
+    "author": "Christopher Mccandless"
   },
   "notFound": {
     "message": "404! Página não encontrada",

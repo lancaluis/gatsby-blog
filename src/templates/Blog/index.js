@@ -27,28 +27,34 @@ const BlogList = props => {
           description={props.t("blog.descriptionPage")}
           url="https://luislanca.dev/blog"
         />
-        {postList.map(
-          (
-            {
-              node: {
-                frontmatter: { date, description, title, thumbnail },
-                timeToRead,
-                fields: { slug },
+        <S.HeaderPage>
+          <S.PageTitle>Todos os posts</S.PageTitle>
+          <S.SearchBar>Search Component</S.SearchBar>
+        </S.HeaderPage>
+        <S.Posts>
+          {postList.map(
+            (
+              {
+                node: {
+                  frontmatter: { date, description, title, thumbnail },
+                  timeToRead,
+                  fields: { slug },
+                },
               },
-            },
-            i
-          ) => (
-            <PostCard
-              slug={slug}
-              date={date}
-              timeToRead={timeToRead}
-              title={title}
-              description={description}
-              thumbnail={thumbnail}
-              key={i}
-            />
-          )
-        )}
+              i
+            ) => (
+              <PostCard
+                slug={slug}
+                date={date}
+                timeToRead={timeToRead}
+                title={title}
+                description={description}
+                thumbnail={thumbnail}
+                key={i}
+              />
+            )
+          )}
+        </S.Posts>
         <Pagination
           isFirst={isFirst}
           isLast={isLast}

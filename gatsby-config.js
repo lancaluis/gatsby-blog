@@ -67,6 +67,9 @@ module.exports = {
               family: `Montserrat`,
               variants: [100, 300, 500, 700],
             },
+            {
+              family: `Amarante`,
+            },
           ],
         },
       },

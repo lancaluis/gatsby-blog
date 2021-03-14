@@ -2,7 +2,7 @@
 title: Dev na Ilha - O início
 description: Saiba como foi minha jornada de 29 noites em uma Ilha no litoral
   norte de São Paulo. Eaí, será que esse lance de "Nômade Digital" vale a pena?
-date: 2020-09-19 06:35:31
+date: 2020-09-20 06:35:31
 thumbnail: dev-na-ilha-o-inicio.png
 ---
 Saiba como foi minha jornada de 29 noites em uma Ilha no litoral norte de São Paulo. Eaí, será que esse lance de "Nômade Digital" vale a pena? Contarei minha experiência em três partes, o que difere exatamente os diversos momentos que vivi durante esse tempo.

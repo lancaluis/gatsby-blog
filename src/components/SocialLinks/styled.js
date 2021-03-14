@@ -5,15 +5,15 @@ export const Links = styled.ul`
   list-style: none;
 `
 export const Link = styled.a`
-  color: #ffd250;
+  color: #373640;
   text-decoration: none;
   transition: color 0.5s;
   &:hover {
-    color: #fff;
+    color: #D5603F;
   }
 `
 export const IconWrapper = styled.div`
-  width: 30px;
-  height: 30px;
-  margin: 1rem 1rem 0 0;
+  width: 25px;
+  height: 25px;
+  margin: 0 0.5rem;
 `

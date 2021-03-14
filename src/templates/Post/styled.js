@@ -16,7 +16,7 @@ export const Title = styled.h1`
   font-size: 2rem;
   font-weight: 700;
   margin-top: 1.5rem;
-  color: #ffd250;
+  color: #D5603F;
   letter-spacing: 1px;
   line-height: 1.2;
 `
@@ -32,7 +32,7 @@ export const Date = styled.time`
   }
 `
 export const Icon = styled.div`
-  color: #ffd250;
+  color: #D5603F;
   width: 16px;
   height: 16px;
   margin-right: 0.5rem;
@@ -46,7 +46,7 @@ export const BackToBlog = styled.div`
 `
 export const BackToBlogLink = styled(Link)`
   font-size: 0.9rem;
-  color: #ffd250;
+  color: #D5603F;
   text-decoration: none;
   transition: opacity 0.5s;
   &:hover {
@@ -110,8 +110,8 @@ export const Main = styled.section`
     width: 100%;
   }
   blockquote {
-    color: #fff;
-    border-left: 0.2rem solid #ffd250;
+    color: #373640;
+    border-left: 0.2rem solid #D5603F;
     padding: 0 1.875rem;
     margin: 3.125rem auto;
   }
@@ -132,7 +132,7 @@ export const Main = styled.section`
     font-weight: 500;
     letter-spacing: 0.069rem;
     line-height: 1.4;
-    color: #fff;
+    color: #373640;
   }
   h1 {
     font-size: 2.8rem;
@@ -186,12 +186,12 @@ export const Main = styled.section`
     }
   }
   a {
-    border-bottom: 1px dashed #ffd250;
-    color: #ffd250;
+    border-bottom: 1px dashed #D5603F;
+    color: #D5603F;
     text-decoration: none;
     transition: opacity 0.5s;
     svg {
-      color: #fff;
+      color: #373640;
     }
     &:hover {
       opacity: 0.8;

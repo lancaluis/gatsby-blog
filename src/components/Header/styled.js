@@ -3,33 +3,52 @@ import { Link } from "gatsby"
 
 export const Wrapper = styled.header`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2rem;
+  flex-direction: column;
+  margin-bottom: 2em;
 `
 
-export const NavBar = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .active {
-    color: #ffd250;
-    text-decoration: line-through;
+export const Language = styled.p`
+  text-align: right;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s;
+  &:hover {
+    color: #D5603F;
   }
 `
+
+export const Brand = styled(Link)`
+  font-size: 5rem;
+  color: #D5603F;
+  text-align: center;
+  margin: 0.5em 0;
+  font-family: "Amarante";
+`
+
+export const Navbar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0.3rem 0;
+`
+
+export const Menu = styled.nav`
+  display: flex;
+  .active {
+    color: #D5603F;
+    text-decoration: underline;
+  }
+`
+
 export const MenuLink = styled(Link)`
   font-weight: 400;
-  margin-left: 1rem;
+  margin: 0 1rem;
   &:hover {
-    color: #ffd250;
+    color: #D5603F;
     transition: 0.3s;
   }
 `
-export const Brand = styled(Link)`
-  font-size: 1rem;
-  font-weight: 300;
-`
-export const Span = styled.span`
-  color: #ffd250;
-  font-weight: 500;
+export const Line = styled.hr`
+  width: 100%;
+  border-top: 1px solid #fafafa;
 `

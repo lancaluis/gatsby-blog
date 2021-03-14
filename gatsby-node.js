@@ -34,7 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
               slug
             }
             frontmatter {
-              date(locale: "en", formatString: "MM [/] DD [/] YYYY")
+              date(formatString: "MMM DD, YYYY", locale: "pt-br")
               description
               title
               thumbnail
@@ -77,7 +77,7 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    const postsPerPage = 3
+    const postsPerPage = 6
     const numPages = Math.ceil(posts.length / postsPerPage)
 
     Array.from({ length: numPages }).forEach((_, index) => {
